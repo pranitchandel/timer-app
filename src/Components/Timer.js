@@ -27,6 +27,7 @@ const Timer = () => {
   };
 
   const handleStart = () => {
+    clearTimeout(timeout.current);
     setTimer(timerInput * 60);
     setPause(false);
     setReset(false);
