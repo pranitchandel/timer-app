@@ -1,38 +1,66 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(156, 253, 221);
+  border-radius: 5px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+input {
+  outline: none;
+  border: none;
+}
+button {
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+.timerContainer {
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::placeholder {
+  font-size: medium;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputClass {
+  background-color: azure;
+  width: 150px;
+  height: 50px;
+  padding-left: 10px;
+  margin: 5px;
+  font-size: large;
+  position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.setBtn {
+  background-color: rgb(88, 88, 226);
+  width: 70px;
+  height: 50px;
   color: white;
+  font-size: large;
+  margin: 5px;
 }
-
-.App-link {
-  color: #61dafb;
+.timerClass {
+  background-color: rgb(219, 219, 219);
+  color: black;
+  height: 40px;
+  font-size: xx-large;
+  width: 230px;
+  margin: 5px auto;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.controlBtn {
+  background-color: azure;
+  margin: 5px;
+  width: 110px;
+  height: 40px;
+  font-size: large;
 }
